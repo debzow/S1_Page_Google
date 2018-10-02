@@ -1,21 +1,36 @@
 
-aside {
-	margin-left: 80%;
+html {
+	height : 100%; 
+	
+}
+
+body {
+	height : 100%; 
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
 }
 
 
-nav {
+aside {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: nowrap;
-	align-items: center;
+	justify-content:flex-end;
+}
 
+nav {
+	width: 300px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 a {
 	text-decoration: none;
 	color: grey;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 .btn {
@@ -28,20 +43,18 @@ a {
 }
 
 section{
+	height: 300px;
 	display: flex;
 	justify-content: center;
-	margin-top: 10%;
 }
 
 article {
 	display: flex;
 	flex-direction: column;
 	align-items : center;
+	justify-content: space-between;
 }
 
-.element1 {
-	margin-top : 20px;
-}
 
 .img_g {
 	height: 100px;
@@ -54,17 +67,24 @@ article {
 	box-shadow : 4px 2px rgb(216, 211, 211);
 }
 
+.search:hover {
+	box-shadow : 6px 4px rgb(216, 211, 211);
+}
+
 .btn2 {
 	height: 30px;
 	width: 150px;
+	color : grey;
 	background-color: rgb(250, 244, 244);
 	border: none;
+	font-weight: bold;
 }
 
-footer {
-	margin-top: 9%;
-	/*margin-bottom: 0%;*/
+.btn2:hover {
+	color: black;
+	border:1px black solid;
 }
+
 .container2 {
 	background-color: rgb(250, 244, 244);
 	color: grey;
@@ -87,19 +107,11 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 450px;
-
-
-	/*margin-right: 5%;*/
+	width: 500px;
 }
+
 
 .element3 {
 	display: flex;
 	flex-wrap: nowrap;
-	/*margin-right: 5%;*/
 }
-/*body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}*/
